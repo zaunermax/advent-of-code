@@ -6,13 +6,9 @@ const prepareInput = (rawInput: string) => rawInput.split(/\n/);
 
 const input$ = of(readInput()).pipe(map(prepareInput));
 
-const goA = async (input: typeof input$) => {
-	return EMPTY;
-};
+const goA = (input: typeof input$) => of(null);
 
-const goB = async (input: typeof input$) => {
-	return EMPTY;
-};
+const goB = (input: typeof input$) => of(null);
 
 forkJoin({ a: goA(input$), b: goB(input$) })
 	.pipe(timeInterval())
