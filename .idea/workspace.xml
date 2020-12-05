@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="chore(license): changed licence">
-      <change afterPath="$PROJECT_DIR$/LICENCES.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+    <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/1/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +110,7 @@
       <updated>1607181878944</updated>
       <workItem from="1607181881012" duration="2234000" />
       <workItem from="1607184324710" duration="115000" />
-      <workItem from="1607184449857" duration="8564000" />
+      <workItem from="1607184449857" duration="8708000" />
     </task>
     <task id="LOCAL-00001" summary="feat(setup): setup project">
       <created>1607186094178</created>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607206285200</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore(license): changed licence">
+      <created>1607206758538</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607206758538</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +160,8 @@
     <MESSAGE value="fix(template): fixed rxjs template" />
     <MESSAGE value="chore(styles): added project code styles" />
     <MESSAGE value="feat(day1): finish day one" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(day1): finish day one" />
+    <MESSAGE value="chore(license): changed licence" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(license): changed licence" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
