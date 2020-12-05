@@ -1,5 +1,6 @@
 import { isDeepStrictEqual } from "util"
 import * as kleur from "kleur"
+// @ts-ignore weird pkg name, couldn't find out to create a d.ts file for it 😅
 import { curry } from "@arrows/composition"
 
 let index = 0

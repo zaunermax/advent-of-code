@@ -1,27 +1,23 @@
-import { test, readInput } from "../utils/index"
+import { readInput } from '../utils/index';
+import { EMPTY, forkJoin, of } from 'rxjs';
+import { map, timeInterval } from 'rxjs/operators';
 
-const prepareInput = (rawInput: string) => rawInput
+const prepareInput = (rawInput: string) => rawInput.split(/\n/);
 
-const input = prepareInput(readInput())
+const input$ = of(readInput()).pipe(map(prepareInput));
 
-const goA = (input) => {
-  return
-}
+const goA = async (input: typeof input$) => {
+	return EMPTY;
+};
 
-const goB = (input) => {
-  return
-}
+const goB = async (input: typeof input$) => {
+	return EMPTY;
+};
 
-/* Tests */
-
-// test()
-
-/* Results */
-
-console.time("Time")
-const resultA = goA(input)
-const resultB = goB(input)
-console.timeEnd("Time")
-
-console.log("Solution to part 1:", resultA)
-console.log("Solution to part 2:", resultB)
+forkJoin({ a: goA(input$), b: goB(input$) })
+	.pipe(timeInterval())
+	.subscribe(({ interval, value: { a, b } }) => {
+		console.log('Solution to part 1:', a);
+		console.log('Solution to part 2:', b);
+		console.log(`Took ${interval}ms.`);
+	});
