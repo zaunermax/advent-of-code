@@ -1,4 +1,6 @@
-Copyright 2020 Max Zauner
+## Original starter project:
+
+Copyright 2019 Maciej Cąderek
 
 Permission to use, copy, modify, and/or distribute this software
 for any purpose with or without fee is hereby granted,
