@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kleur.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/1/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/readInput.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/readInput.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +93,7 @@
     <property name="nodejs_interpreter_path" value="$USER_HOME$/n/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -121,12 +112,26 @@
       <updated>1607181878944</updated>
       <workItem from="1607181881012" duration="2234000" />
       <workItem from="1607184324710" duration="115000" />
-      <workItem from="1607184449857" duration="1567000" />
+      <workItem from="1607184449857" duration="1886000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(setup): setup project">
+      <created>1607186094178</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607186094178</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="feat(setup): setup project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(setup): setup project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
