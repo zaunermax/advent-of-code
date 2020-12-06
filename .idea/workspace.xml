@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/1/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,8 @@
       <updated>1607181878944</updated>
       <workItem from="1607181881012" duration="2234000" />
       <workItem from="1607184324710" duration="115000" />
-      <workItem from="1607184449857" duration="8708000" />
+      <workItem from="1607184449857" duration="11042000" />
+      <workItem from="1607263699299" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="feat(setup): setup project">
       <created>1607186094178</created>
@@ -147,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607206758538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor(code): made code a bit easier on the eyes">
+      <created>1607206942793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607206942793</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +170,8 @@
     <MESSAGE value="chore(styles): added project code styles" />
     <MESSAGE value="feat(day1): finish day one" />
     <MESSAGE value="chore(license): changed licence" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(license): changed licence" />
+    <MESSAGE value="refactor(code): made code a bit easier on the eyes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(code): made code a bit easier on the eyes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

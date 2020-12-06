@@ -1,5 +1,5 @@
 import { combineLatest, forkJoin, from, of } from 'rxjs';
-import { map, timeInterval, find, filter, mergeMap, tap } from 'rxjs/operators';
+import { map, timeInterval, find, filter, mergeMap } from 'rxjs/operators';
 import { readInput } from '../utils';
 
 const prepareInput = (rawInput: string) => rawInput.split(/\n/);
