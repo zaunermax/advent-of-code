@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/1/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
       <workItem from="1607181881012" duration="2234000" />
       <workItem from="1607184324710" duration="115000" />
       <workItem from="1607184449857" duration="11042000" />
-      <workItem from="1607263699299" duration="271000" />
+      <workItem from="1607263699299" duration="399000" />
     </task>
     <task id="LOCAL-00001" summary="feat(setup): setup project">
       <created>1607186094178</created>
@@ -156,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607206942793</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor(code): removed unused import">
+      <created>1607264012735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607264012735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +177,8 @@
     <MESSAGE value="feat(day1): finish day one" />
     <MESSAGE value="chore(license): changed licence" />
     <MESSAGE value="refactor(code): made code a bit easier on the eyes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(code): made code a bit easier on the eyes" />
+    <MESSAGE value="refactor(code): removed unused import" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(code): removed unused import" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
