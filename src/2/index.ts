@@ -54,8 +54,12 @@ const eitherPositionMatches = (pw: string, char: string, [pos1, pos2]: NumTuple)
 const bothPositionsMatch = (pw: string, char: string, [pos1, pos2]: NumTuple) =>
 	pw[pos1] === char && pw[pos2] === char;
 
+const add = (a: number) => (b: number) => a + b;
+
+const dec1 = add(-1);
+
 const adjustPositionsToZeroIdx = ({ policy: [pos1, pos2], ...rest }: PwPolicyObject) => ({
-	policy: [pos1 - 1, pos2 - 1] as [number, number],
+	policy: [dec1(pos1), dec1(pos2)] as [number, number],
 	...rest,
 });
 

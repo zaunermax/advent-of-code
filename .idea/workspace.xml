@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="feat(day2): implemented part 1">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="37650079-f89b-4cd5-acc0-a3938a695bcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/2/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/2/index.ts" afterDir="false" />
     </list>
@@ -113,7 +112,7 @@
       <workItem from="1607181881012" duration="2234000" />
       <workItem from="1607184324710" duration="115000" />
       <workItem from="1607184449857" duration="11042000" />
-      <workItem from="1607263699299" duration="4508000" />
+      <workItem from="1607263699299" duration="5652000" />
     </task>
     <task id="LOCAL-00001" summary="feat(setup): setup project">
       <created>1607186094178</created>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607266769458</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat(day2): finished day 2">
+      <created>1607268244618</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607268244618</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +202,8 @@
     <MESSAGE value="refactor(code): removed unused import" />
     <MESSAGE value="feat(readme): adapted readme for personal purpose" />
     <MESSAGE value="feat(day2): implemented part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(day2): implemented part 1" />
+    <MESSAGE value="feat(day2): finished day 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(day2): finished day 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
