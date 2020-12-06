@@ -1,5 +1,5 @@
 import { readInput } from '../utils/index';
-import { EMPTY, forkJoin, of } from 'rxjs';
+import { forkJoin, of } from 'rxjs';
 import { map, timeInterval } from 'rxjs/operators';
 
 const prepareInput = (rawInput: string) => rawInput.split(/\n/);
