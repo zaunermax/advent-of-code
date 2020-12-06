@@ -1,20 +1,17 @@
 import { readInput } from '../utils/index';
 import { forkJoin, from, of } from 'rxjs';
 import { count, filter, map, mergeAll, mergeMap, timeInterval } from 'rxjs/operators';
-import { logValue } from '../utils/rs-util';
+
+type NumTuple = [number, number];
 
 type PwPolicyObject = {
-	policy: {
-		min: number;
-		max: number;
-	};
+	policy: NumTuple;
 	char: string;
 	pw: string;
 };
 
 type EvaluatedPwObject = {
-	min: number;
-	max: number;
+	policy: NumTuple;
 	charCnt: number;
 };
 
@@ -22,7 +19,7 @@ const prepareInput = (rawInput: string) => rawInput.split(/\n/);
 
 const toStreamOfChars = (input: string) => from(input.split(''));
 
-const parseInput = (input: string) => input.split(':');
+const parseInput = (input: string) => input.split(': ');
 
 const stringNotEmpty = (str: string) => str.length > 0;
 
@@ -33,27 +30,37 @@ const parsePasswordPolicy = ([policy, rawPw]: string[]): PwPolicyObject => {
 	const [min, max] = minMax.split('-');
 
 	return {
-		policy: {
-			min: parseIntDec(min),
-			max: parseIntDec(max),
-		},
-		char: char.trim(),
-		pw: rawPw.trim(),
+		policy: [parseIntDec(min), parseIntDec(max)],
+		char: char,
+		pw: rawPw,
 	};
 };
 
-const evaluatePwPolicy = ({ policy: { min, max }, char, pw }: PwPolicyObject) =>
+const evaluatePwPolicyV1 = ({ policy: [min, max], char, pw }: PwPolicyObject) =>
 	forkJoin({
-		min: of(min),
-		max: of(max),
+		policy: of<NumTuple>([min, max]),
 		charCnt: toStreamOfChars(pw).pipe(
 			filter((val) => val === char),
 			count(),
 		),
 	});
 
-const invalidPasswords = ({ min, max, charCnt }: EvaluatedPwObject) =>
+const invalidPasswords = ({ policy: [min, max], charCnt }: EvaluatedPwObject) =>
 	charCnt <= max && charCnt >= min;
+
+const eitherPositionMatches = (pw: string, char: string, [pos1, pos2]: NumTuple) =>
+	pw[pos1] === char || pw[pos2] === char;
+
+const bothPositionsMatch = (pw: string, char: string, [pos1, pos2]: NumTuple) =>
+	pw[pos1] === char && pw[pos2] === char;
+
+const adjustPositionsToZeroIdx = ({ policy: [pos1, pos2], ...rest }: PwPolicyObject) => ({
+	policy: [pos1 - 1, pos2 - 1] as [number, number],
+	...rest,
+});
+
+const evaluatePwPolicyV2 = ({ policy, char, pw }: PwPolicyObject) =>
+	eitherPositionMatches(pw, char, policy) && !bothPositionsMatch(pw, char, policy);
 
 const input$ = of(readInput()).pipe(
 	map(prepareInput),
@@ -64,9 +71,10 @@ const input$ = of(readInput()).pipe(
 );
 
 const goA = (input: typeof input$) =>
-	input.pipe(mergeMap(evaluatePwPolicy), filter(invalidPasswords), count());
+	input.pipe(mergeMap(evaluatePwPolicyV1), filter(invalidPasswords), count());
 
-const goB = (input: typeof input$) => of(null);
+const goB = (input: typeof input$) =>
+	input.pipe(map(adjustPositionsToZeroIdx), filter(evaluatePwPolicyV2), count());
 
 forkJoin({ a: goA(input$), b: goB(input$) })
 	.pipe(timeInterval())
